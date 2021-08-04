@@ -6,7 +6,7 @@ export default class LinkedListNode<T>{
     this.next = next;
   }
 
-  toString(callback: Function) {
+  toString(callback: Function | null) {
     return callback ? callback(this.value) : `${this.value}`;
   }
 }

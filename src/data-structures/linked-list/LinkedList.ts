@@ -103,7 +103,7 @@ export default class LinkedList<T> {
    * @param {function} [findParams.callback]
    * @return {LinkedListNode}
    */
-  find(value = undefined, callback: Function) {
+  find(value: LinkedListNode<T> | null, callback: Function) {
     if (!this.head) {
       return null;
     }
